@@ -1,0 +1,19 @@
+<div>
+    Generally speaking, disabling security is always a bad idea. Especially if done
+    out of ignorance. Please, only use these options as a last resort and on private
+    jenkins instances not available to the public
+    (including but not limited to being exposed to the Internet).<br />
+    <br />
+    However, there are a few use cases when disabling security might be warranted.
+    <ul>
+    <li>Managing configuration via the file-system: if you deploy your configuration
+    via the file system rather than via the web GUI, such as automated or scripted
+    deployment, you might need to lacken the security to fully automate the process.
+    </li>
+    <li>
+    Generating configuration via plugins such as job DSL. Spawning jobs with
+    unique configuration might result in hundreds of unique scripts needing
+    approval, making it infeasible to use the manual approval mechanisms.
+    </li>
+    </ul>
+</div>
