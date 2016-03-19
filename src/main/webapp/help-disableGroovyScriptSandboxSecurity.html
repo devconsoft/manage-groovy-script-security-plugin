@@ -1,6 +1,15 @@
 <div>
-    WARNING: Enabling this option disables all groovy script sandbox security! <br />
-    By enabling this option, groovy sandbox security is disabled by
-    automatically white-listing all calls, including calls that might compromise the jenkins master.<br />
-    This has serious consequences to security. Only enable this option if you truly understand the security implications.
+    WARNING: Enabling this option disables all groovy script sandbox security!
+    <p>
+    When activated, this option will bypass the script sandbox security mechanism by
+    treating all calls as if they  where white-listed.
+    The plugin does not modify the approved white-list, and the effects of
+    the plugin is hence immediately reverted when
+    disabling the option in the system configuration, or when uninstalling the plugin.
+    <p/>
+    <p>
+    See the
+    <a href="https://wiki.jenkins-ci.org/display/JENKINS/Script+Security+Plugin">wiki</a>
+    for the Script security plugin to learn more how the sandbox mechanism works.
+    </p>
 </div>
